@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite_Smoke">
+<groups>
+<run>
+<include name="Smoke"></include>
+</run>
+</groups>
+<listeners>
+<listener class-name="com.mobileresringframework.TestUtils.Listeners"></listener>
+</listeners>
+  <test thread-count="5" name="End2End Framework">
+    <classes>
+      <class name="com.mobiletestingframework.ECommerce_tc_1"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="Error Validation">
+    <classes>
+      <class name="com.mobiletestingframework.ECommerce_tc_2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
